@@ -46,3 +46,18 @@ Adjust `--min-silence`, `--noise-db`, `--keep-gap` or `--motion-scale`; run `sni
 Designed for ordinary constant-frame-rate SDR talking-head footage with audio. Moving cameras, wide/two-person shots, occlusion, poorly lit faces and busy backgrounds are unsuitable. Face detection can miss people; camera checks are sampled heuristics. Hidden hands are not assessed. Music/noise can confuse silence detection. Only the first audio stream is used; output is H.264/AAC. No GUI or editor integration yet.
 
 Tests cover timing, filler adjacency, conservative fallback and rendering; real-footage validation is limited. Run `python -m unittest discover -s tests`. Contributions and threshold improvements are welcome. MIT licensed. Uses FFmpeg, OpenCV and MediaPipe; their own licenses apply.
+
+## Visual guide
+
+![Matching pose: shorten the pause while retaining a natural gap.](visuals/01-cut.png)
+
+<details>
+<summary>See a rejected cut and optional filler trimming</summary>
+
+![Mouth movement: keep the original pause.](visuals/02-keep.png)
+
+![Optional adjacent filler trimming, off by default.](visuals/03-fillers.png)
+
+</details>
+
+Illustrative audio and timings; real stock frames and landmark comparisons. [Source, license and image files](visuals/README_Visuals.md).
