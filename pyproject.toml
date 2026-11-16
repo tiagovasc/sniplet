@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sniplet"
+version = "0.1.0"
+description = "Conservative silence cuts for talking-head video"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = {text = "MIT"}
+dependencies = ["mediapipe==0.10.21", "numpy>=1.26,<2", "protobuf>=4.25.3,<5", "opencv-contrib-python>=4.8,<4.12"]
+
+[project.scripts]
+sniplet = "sniplet.cli:main"
+
+[tool.setuptools]
+packages = ["sniplet"]

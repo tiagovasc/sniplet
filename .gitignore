@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+private/
+README_Sniplet.md
+*.mp4
+*.wav
+*.zip
+*.plan.json
+.env
+*.key

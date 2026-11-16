@@ -1,0 +1,8 @@
+{
+  "time_unit": "seconds",
+  "words": [
+    {"word": "Thinking", "start": 0.000, "end": 0.600},
+    {"word": "um", "start": 2.700, "end": 2.950},
+    {"word": "carefully", "start": 3.100, "end": 3.700}
+  ]
+}
